@@ -13,5 +13,12 @@
  *= require_tree .
  *= require_self
  */
-@import 'bulma';
-@import 'styles';
+@import "bulma";
+@import "styles";
+
+@font-face {
+  font-family: "Muli";
+  src: font-url("Muli-Extra-Bold.ttf") format("truetype");
+  src: font-url("Muli-Bold.ttf") format("truetype");
+  src: font-url("Muli-Regular.ttf") format("truetype");
+}
