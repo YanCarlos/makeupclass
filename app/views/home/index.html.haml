@@ -1,4 +1,123 @@
+= render partial: 'layouts/navigation'
+= render partial: 'layouts/home/header'
+
 %section
-  %h1 Cualquier cosa
-  %h2 Hola mundo
-%h1 Otro h1
+  .container
+    .columns
+      .column.is.12
+        %h3.has-text-centered.has-text-weight-bold.is-size-3.page-subtitle Nuestros Cursos
+    .columns.is-centered
+      .column.is-6
+        .card
+          .card-content.has-text-centered
+            %img.margin-b-2{:alt => "service icon", :src => "/assets/first-course.png"}/
+            %p.is-size-5.has-text-weight-bold
+              SELF MakeUp
+            %p.is-size-7.has-text-weight-light.has-text-grey-light	
+              Jeff Atwood
+            %p
+              Lorem ipsun dolor sit amet confetur aset libron You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing.
+
+
+%section.has-background-color-pie
+  .container
+    .columns.is-vcentered
+      .column.is-6
+        %img{:alt => "", :src => "/assets/mobile-1.png"}/
+      .column.is-6
+        %h3.has-text-weight-bold.is-size-3.margin-b-1 Integrated Social Network
+        %p 
+          You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing.
+
+%section
+  .container
+    .columns.is-vcentered
+      .column.is-6
+        %h3.has-text-weight-bold.is-size-3.margin-b-1 High Quality Video Chating
+        %p 
+          You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing.
+      .column.is-6
+        %img{:alt => "", :src => "/assets/network-bg.png"}/
+
+%section.has-background-color
+  .container
+    .columns
+      .column.is.12.text-center
+        %h3.has-text-centered.has-text-weight-bold.is-size-3.page-subtitle Preguntas frecuentes
+    .columns
+      .column.is-6
+        .card
+          .card-content
+            %h5.margin-b-1.is-size-5.has-text-weight-bold
+              What is your favorite fruit?
+            %p.is-size-6.has-text-weight-light.has-text-grey	
+              The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not-quite-tuned-in radio station rises and for a while drowns out the patter.
+      .column.is-6
+        .card
+          .card-content
+            %h5.margin-b-1.is-size-5.has-text-weight-bold
+              What is your favorite fruit?
+            %p.is-size-6.has-text-weight-light.has-text-grey	
+              The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not-quite-tuned-in radio station rises and for a while drowns out the patter.
+    .columns
+      .column.is-6
+        .card
+          .card-content
+            %h5.margin-b-1.is-size-5.has-text-weight-bold
+              What is your favorite fruit?
+            %p.is-size-6.has-text-weight-light.has-text-grey	
+              The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not-quite-tuned-in radio station rises and for a while drowns out the patter.
+      .column.is-6
+        .card
+          .card-content
+            %h5.margin-b-1.is-size-5.has-text-weight-bold
+              What is your favorite fruit?
+            %p.is-size-6.has-text-weight-light.has-text-grey	
+              The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not-quite-tuned-in radio station rises and for a while drowns out the patter.
+    .columns
+      .column.is-6
+        .card
+          .card-content
+            %h5.margin-b-1.is-size-5.has-text-weight-bold
+              What is your favorite fruit?
+            %p.is-size-6.has-text-weight-light.has-text-grey	
+              The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not-quite-tuned-in radio station rises and for a while drowns out the patter.
+      .column.is-6
+        .card
+          .card-content
+            %h5.margin-b-1.is-size-5.has-text-weight-bold
+              What is your favorite fruit?
+            %p.is-size-6.has-text-weight-light.has-text-grey	
+              The recording starts with the patter of a summer squall. Later, a drifting tone like that of a not-quite-tuned-in radio station rises and for a while drowns out the patter.
+
+%section
+  .container
+    .columns
+      .column.is-12.has-text-centered
+        %h3.has-text-centered.has-text-weight-bold.is-size-3.page-subtitle Ask us any questions
+    .columns.is-centered
+      .column.is-10
+        %form
+          .columns
+            .column.is-6
+              .field
+                %p.control
+                  %input.input{:placeholder => "Nombre", :type => "text"}/
+            .column.is-6
+              .field
+                %p.control
+                  %input.input{:placeholder => "Email", :type => "email"}/
+          .columns
+            .column.is-12
+              .field
+                %p.control
+                  %input.input{:placeholder => "Subject", :type => "text"}/
+          .columns
+            .column.is-12
+              .field
+                %p.control
+                  %textarea.textarea{:placeholder => "Mensaje"}
+          .columns
+            .column.is-12.has-text-right
+              %button.button.is-primary Enviar
+= render partial: 'layouts/home/footer'
