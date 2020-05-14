@@ -8,5 +8,6 @@
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
     %link{:href => "https://unpkg.com/bulmaswatch/minty/bulmaswatch.min.css", :rel => "stylesheet"}/
-  %body{"data-spy" => "scroll", "data-target" => ".mainmenu-area"}
+  %body{'data-spy': 'scroll', 'data-target': '.mainmenu-area'}
+    = render 'layouts/flash' unless sign_in_page? || sign_up_page?
     = yield

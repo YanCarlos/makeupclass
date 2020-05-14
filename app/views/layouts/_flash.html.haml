@@ -1,0 +1,15 @@
+- if notice
+  %article.message.is-success
+    .message-body
+      = success
+
+- elsif alert
+  %article.message.is-danger
+    .message-body
+      = alert
+
+- else
+  - flash.each do |key, value|
+    %article.message
+      .message-body
+        = value

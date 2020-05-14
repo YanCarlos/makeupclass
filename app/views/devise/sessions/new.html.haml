@@ -9,10 +9,11 @@
         .column.is-full
           .login-form
             .sign-in-up
-              %h1 Log in
+              %h1 Inicia sesión
               %h2
                 = render 'devise/shared/signup'
             = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+              = render 'layouts/flash'
               .columns
                 .column.is-full
                   .field
@@ -35,7 +36,7 @@
               .columns
                 .column.is-full
                   .actions.text-right
-                    = f.submit 'Log in', class: 'button is-primary is-medium'
+                    = f.submit 'Ingresar', class: 'button is-primary is-medium'
             .margin-t-3.text-right
               = render 'devise/shared/links'
   .column.total-vh.bg-blue.text-center
