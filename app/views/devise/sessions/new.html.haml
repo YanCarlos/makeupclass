@@ -34,12 +34,12 @@
                       = f.label :remember_me, 'Recuerdame'
               .columns
                 .column.is-full
-                  .actions
-                    = f.submit 'Log in', class: 'button is-primary is-medium pull-right'
-            .pull-right.margin-t-3
+                  .actions.text-right
+                    = f.submit 'Log in', class: 'button is-primary is-medium'
+            .margin-t-3.text-right
               = render 'devise/shared/links'
   .column.total-vh.bg-blue.text-center
-    .login-text
+    .login-text.padding-2
       .colaboration.margin-t-3
         = image_tag('colaboration.svg')
       %br
