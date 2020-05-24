@@ -1,25 +1,71 @@
-= render partial: 'layouts/navigation'
+= render partial: 'layouts/home/navigation'
 = render partial: 'layouts/home/header'
 
 %section
   .container
     .columns
-      .column.is.12
+      .column.is-12
         %h3.has-text-centered.has-text-weight-bold.is-size-3.page-subtitle Nuestros Cursos
-    .columns.is-centered
-      .column.is-6
+    .columns
+      .column.is-3
         .card
-          .card-content.has-text-centered
-            %img.margin-b-2{:alt => "service icon", :src => "/assets/first-course.png"}/
-            %p.is-size-5.has-text-weight-bold
+          .card-content.course-card.has-text-centered
+            %img.margin-b-1{:alt => "service icon", :src => "/assets/first-course.png"}/
+            %p.is-size-6.has-text-weight-bold
               SELF MakeUp
             %p.is-size-7.has-text-weight-light.has-text-grey-light	
               Jeff Atwood
-            %p
-              Lorem ipsun dolor sit amet confetur aset libron You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing.
+      .column.is-3
+        .card
+          .card-content.course-card.has-text-centered
+            %img.margin-b-1{:alt => "service icon", :src => "/assets/first-course.png"}/
+            %p.is-size-6.has-text-weight-bold
+              SELF MakeUp
+            %p.is-size-7.has-text-weight-light.has-text-grey-light	
+              Jeff Atwood
+      .column.is-3
+        .card
+          .card-content.course-card.has-text-centered
+            %img.margin-b-1{:alt => "service icon", :src => "/assets/first-course.png"}/
+            %p.is-size-6.has-text-weight-bold
+              SELF MakeUp
+            %p.is-size-7.has-text-weight-light.has-text-grey-light	
+              Jeff Atwood
+      .column.is-3
+        .card
+          .card-content.course-card.has-text-centered
+            %img.margin-b-1{:alt => "service icon", :src => "/assets/first-course.png"}/
+            %p.is-size-6.has-text-weight-bold
+              SELF MakeUp
+            %p.is-size-7.has-text-weight-light.has-text-grey-light	
+              Jeff Atwood
 
+%section.has-background-color
+  .container
+    .columns
+      .column.is-12
+        %h3.has-text-centered.has-text-weight-bold.is-size-3.page-subtitle ¿Cómo funciona?
+    .columns
+      .column.is-4.has-text-centered.is-centered
+        %img.margin-b-1{:alt => "service icon", :src => "/assets/service-icon-1.png"}/
+        %p.is-size-5.has-text-weight-bold
+          Primer paso
+        %p	
+          You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing
+      .column.is-4.has-text-centered.is-centered
+        %img.margin-b-1{:alt => "service icon", :src => "/assets/service-icon-2.png"}/
+        %p.is-size-5.has-text-weight-bold
+          Segundo paso
+        %p
+          You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing
+      .column.is-4.has-text-centered.is-centered
+        %img.margin-b-1{:alt => "service icon", :src => "/assets/service-icon-3.png"}/
+        %p.is-size-5.has-text-weight-bold
+          Tercer paso
+        %p
+          You can now use all Social Network from this Lunatic app also. Writers and stars of Veep have responded incredulous to the news an Australian politician required stitches after knocking himself unconscious while laughing
 
-%section.has-background-color-pie
+%section.no-padding-b
   .container
     .columns.is-vcentered
       .column.is-6
@@ -42,7 +88,7 @@
 %section.has-background-color
   .container
     .columns
-      .column.is.12.text-center
+      .column.is-12.text-center
         %h3.has-text-centered.has-text-weight-bold.is-size-3.page-subtitle Preguntas frecuentes
     .columns
       .column.is-6

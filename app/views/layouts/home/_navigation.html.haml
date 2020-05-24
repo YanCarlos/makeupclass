@@ -1,29 +1,46 @@
-%nav.navbar.mainmenu-area.section-padding{"data-offset-top" => "200", "data-spy" => "affix"}
+%nav.navbar.navbar-padding{"aria-label" => "main navigation", :role => "navigation"}
   .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => "#mainmenu", "data-toggle" => "collapse", :type => "button"}
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#"}
-        %img{:alt => "", :src => "/assets/logo.png"}/
-    #mainmenu.collapse.navbar-collapse
-      .navbar-header.navbar-right
-        %a.navbar-bttn{:href => "#"} Try for free
-      %ul.nav.navbar-nav.navbar-left
-        %li.active
-          %a{:href => "#home-page"} Home
-        %li
-          %a{:href => "#about-page"} About
-        %li
-          %a{:href => "#feature-page"} Features
-        %li
-          %a{:href => "#gallery-page"} Gallery
-        %li
-          %a{:href => "#price-page"} Pricing
-        %li
-          %a{:href => "#team-page"} Team
-        %li
-          %a{:href => "#blog-page"} Blog
-        %li
-          %a{:href => "#contact-page"} Contact
+    .navbar-brand
+      %a.navbar-item{:href => "https://bulma.io"}
+        %img{:height => "28", :src => "https://bulma.io/images/bulma-logo.png", :width => "112"}/
+      %a.navbar-burger.burger{"aria-expanded" => "false", "aria-label" => "menu", "data-target" => "navbarBasicExample", :role => "button"}
+        %span{"aria-hidden" => "true"}
+        %span{"aria-hidden" => "true"}
+        %span{"aria-hidden" => "true"}
+    #navbarBasicExample.navbar-menu
+      .navbar-start
+        %a.navbar-item
+          Inicio
+        %a.navbar-item
+          Cursos
+        %a.navbar-item
+          Tutores
+        -# .navbar-item.has-dropdown.is-hoverable
+        -#   %a.navbar-link
+        -#     More
+        -#   .navbar-dropdown
+        -#     %a.navbar-item
+        -#       About
+        -#     %a.navbar-item
+        -#       Jobs
+        -#     %a.navbar-item
+        -#       Contact
+        -#     %hr.navbar-divider/
+        -#     %a.navbar-item
+        -#       Report an issue
+      .navbar-end
+        .navbar-item
+          .navbar-item.has-dropdown.is-hoverable
+            %a.navbar-link.is-size-6
+              %img.profile-img{:alt => "profile picture", :src => "/assets/profile-image.png"}/
+              Nikollai
+            .navbar-dropdown
+              %a.navbar-item
+                Perfil
+              %a.navbar-item
+                Cerrar Sesion
+          -# .buttons
+          -#   %a.button.is-primary
+          -#     %strong Registrarse
+          -#   %a.button.is-light
+          -#     Iniciar Sesion
