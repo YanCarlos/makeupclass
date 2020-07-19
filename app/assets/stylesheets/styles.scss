@@ -1,10 +1,20 @@
 $color-text: #ff867a;
 $color-gray-light: #fafafa;
 $color-pie: #fff7f3;
+$color-ocean: #6abfb0;
+$color-pink: #f14668;
 
 * {
   font-family: "Muli" !important;
   font-weight: 400;
+}
+
+html,body {
+  height: 100%;
+}
+
+.padding-0 {
+  padding: 0;
 }
 
 .padding-1 {
@@ -12,7 +22,7 @@ $color-pie: #fff7f3;
 }
 
 .padding-2 {
-  padding: 20px;
+  padding: 20px !important;
 }
 
 .padding-3 {
@@ -45,6 +55,18 @@ $color-pie: #fff7f3;
 
 .padding-t-5 {
   padding-top: 50px;
+}
+
+.margin-t-1 {
+  margin-top: 10px;
+}
+
+.margin-t-2 {
+  margin-top: 20px;
+}
+
+.margin-t-3 {
+  margin-top: 30px;
 }
 
 .margin-b-1 {
@@ -91,6 +113,10 @@ section {
   width: 50%;
 }
 
+.width-60 {
+  width: 60%;
+}
+
 .center {
   margin: auto;
 }
@@ -124,4 +150,73 @@ section {
     padding-top: 40px;
     padding-bottom: 40px;
   }
+}
+
+.total-vh {
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.bg-blue {
+  background-color: $color-ocean;
+}
+
+.logo {
+  width: 70%;
+  margin: auto;
+}
+
+.login-form {
+  margin-bottom: 20px;
+}
+
+.sign-in-up {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button.is-medium {
+  font-size: 1.1rem !important;
+  width: 150px;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.login-text {
+  width: 60%;
+  margin: auto;
+}
+
+.font-2 {
+  font-size: 2rem !important;
+}
+
+.font-2-5 {
+  font-size: 2.5rem !important;
+}
+
+.font-3 {
+  font-size: 3rem !important;
+}
+
+.d-flex {
+  display: flex !important;
 }

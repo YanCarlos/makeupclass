@@ -1,0 +1,52 @@
+.columns.is-gapless
+  .column.total-vh
+    .width-60.center
+      .columns
+        .column.is-full
+          .logo
+            = image_tag('logoipsum.svg')
+      .columns
+        .column.is-full
+          .login-form
+            .sign-in-up
+              %h1 Regístrate
+              %h2
+                = render 'devise/shared/links'
+            = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+              = render 'devise/shared/error_messages', resource: resource
+              .columns
+                .column.is-full
+                  .field
+                    = f.label :email
+                    %br/
+                    = f.email_field :email, autofocus: true, autocomplete: "email", class: 'input is-primary'
+              .columns
+                .column.is-full
+                  .field
+                    = f.label :password, 'Contraseña'
+                    - if @minimum_password_length
+                      %em
+                        (#{@minimum_password_length} caracteres minimo)
+                    %br/
+                    = f.password_field :password, autocomplete: "new-password", class: 'input is-primary'
+              .columns
+                .column.is-full
+                  .field
+                    = f.label :password_confirmation, 'Confirmar Contraseña'
+                    %br/
+                    = f.password_field :password_confirmation, autocomplete: "new-password", class: 'input is-primary'
+              .columns
+                .column.is-full
+                  .actions.text-right
+                    = f.submit 'Crear cuenta', class: 'button is-primary is-medium'
+  .column.total-vh.bg-blue.text-center
+    .login-text.padding-2
+      .colaboration.margin-t-3
+        = image_tag('learn.svg')
+      %br
+      .title.text-white.text-center.font-3
+        ¡Te damos la bienvenida!
+      %br
+      .subtitle.text-white.text-center.font-2
+        Clases, talleres y conferencias en vivo
+        

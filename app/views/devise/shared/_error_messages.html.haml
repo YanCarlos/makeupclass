@@ -1,0 +1,7 @@
+- if resource.errors.any?
+  %article.message.is-danger
+    .message-body
+      - resource.errors.full_messages.each_with_index do |message, index|
+        - if index > 0
+          %br
+        = message
